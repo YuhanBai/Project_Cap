@@ -272,7 +272,7 @@ def getXy(GDP, DR):
     X = np.concatenate((X1d, X2d), axis = 1)
     return X,y
 
-def getAvg(GDP, DR):
+def getAvg(GDP, DR): # use the avg as training and testing data
     avgGDP = GDP.mean(axis=1)
     avgDR = DR.mean(axis=1)
     Xavg = np.vstack((avgGDP,avgDR))
